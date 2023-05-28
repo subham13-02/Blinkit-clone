@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Lato', sans-serif ;
+    
 }
 
 /* header-style */
@@ -13,7 +14,7 @@
     position:fixed;
     top: 0px;
     width: 100%;
-    height:100px;
+    height:86px;
     z-index: 1000;
     display:flex;
     justify-content: space-between;
@@ -58,8 +59,8 @@
     font-size: 20px;
 }
 .cart button{
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 16px;
     border: 0px;
     color:white;
     border-radius: 10px;
@@ -77,16 +78,20 @@
     top: 100px;
 }
 .banner-1{
-    padding: 0 120px;;
     display:flex;
-    
+    justify-content: center;
+}
+
+.banner-1-img img{
+    width: 1280px;
+    height: 235px;
 }
 .banner-2{
     display:flex;
     justify-content: center;
     gap:20px; 
     overflow: auto scroll;
-    width:1440px;
+    width:1250px;
     
 }
 .banner-2::-webkit-scrollbar{
@@ -94,17 +99,98 @@
 }
 
 .banner-img-2 img{
-    height: 200px;
-    width: 300px;
+    height: 195px;
+    width: 335px;
 }
+.first-element-1{
+    margin-left: 860px;
+}
+
+.banner-3{
+    width:1260px;
+    display:grid;
+    /* justify-content: center; */
+    grid-template-columns: repeat(10 ,10%);
+    flex-wrap: wrap;
+
+}
+.section-3-img img{
+    width:128px;
+    height:188px;
+} 
+
+.content{
+    
+    display:flex;
+    justify-content: center;
+    overflow: auto scroll;
+    gap:20px;
+    height: 307px; 
+    width:1250px;
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+.category-name{
+    display:flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 20px;
+}
+.category-name a{
+    color:green;
+    text-decoration: none;
+}
+.content-box img{
+    margin:0px 10px;
+}
+.content-box{
+    position: relative;
+    padding: 10px;
+    height:287px;
+    width:179px;
+    border-radius:8px;
+    border:1px solid rgb(228, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+}
+.quantity{
+    line-height: 40px;
+    font-size: 12px;
+    color: grey;
+}
+.actual-price{
+    color: gray;
+    font-size: 12px;
+}
+
+.content-box button{
+    position: absolute;
+    top:240px;
+    left:110px;
+    background-color: rgb(247, 255, 249);
+    border-radius: 5px;
+    border:1px solid green;
+    color:green;
+    padding: 7px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.first-element-2{
+    margin-left: 350px;
+}
+
 /* footer-style */
+
 footer{
     display: flex;
     justify-content: center;
+    
     margin-top:20px;
 
 }
 .fa-heart{
+    margin-top:100px;
     padding:2px;
     color:red;
 }

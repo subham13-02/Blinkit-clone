@@ -60,12 +60,12 @@
 }
 .cart button{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     border: 0px;
     color:white;
     border-radius: 10px;
     margin-right: 40px;
-    padding: 18px;
+    padding: 17px;
     background-color: green;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .banner-1-img img{
-    width: 1280px;
+    width: 1200px;
     height: 235px;
 }
 .banner-2{
@@ -91,7 +91,7 @@
     justify-content: center;
     gap:20px; 
     overflow: auto scroll;
-    width:1250px;
+    width:1170px;
     
 }
 .banner-2::-webkit-scrollbar{
@@ -103,13 +103,12 @@
     width: 335px;
 }
 .first-element-1{
-    margin-left: 860px;
+    margin-left: 920px;
 }
 
 .banner-3{
-    width:1260px;
+    width:1200px;
     display:grid;
-    /* justify-content: center; */
     grid-template-columns: repeat(10 ,10%);
     flex-wrap: wrap;
 
@@ -126,7 +125,7 @@
     overflow: auto scroll;
     gap:20px;
     height: 307px; 
-    width:1250px;
+    width:1190px;
 }
 .content::-webkit-scrollbar{
     display: none;
@@ -177,7 +176,7 @@
     text-transform: uppercase;
 }
 .first-element-2{
-    margin-left: 350px;
+    margin-left: 400px;
 }
 
 /* footer-style */
@@ -193,4 +192,77 @@ footer{
     margin-top:100px;
     padding:2px;
     color:red;
+}
+
+@media only screen and (max-width:1200px){
+    /* header-style */
+    .logo{
+        padding: 0px 20px;
+    }
+    
+    .delivery-time{
+        font-weight: 900;
+        font-size: 17px;
+    }
+    .delivery-location{
+        margin-top: 7px;
+        font-size: 11px;
+    }
+    .search-bar{
+        width: 35%;
+        height: 45px;
+        gap: 8px;
+        padding: 9px;
+    }
+    .login{
+        font-weight: 200;
+        font-size: 18px;
+    }
+    .cart button{
+        font-weight: 700;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    /* main-style */
+    .banner-1-img img{
+        width: 900px;
+        height: 185px;
+        margin-left:120px;
+    }
+
+    .banner-2{
+        gap:15px; 
+        width:870px;
+        margin-left:120px;
+        padding:0px 350px;
+    }
+
+    .banner-img-2 img{
+        height: 165px;
+        width: 280px;
+    }
+    .first-element-1{
+        margin-left: 890px;
+    }
+    
+    .banner-3{
+        width:900px;
+        margin-left:120px;
+    }
+    .section-3-img img{
+        width:90px;
+        height:140px;
+    } 
+    .category-name{
+        font-size: 22px;
+        margin-left:120px;
+    }
+    .content{ 
+        width:870px;
+        margin-left:120px;
+    }
+    .first-element-2{
+        margin-left: 720px;
+    }
 }

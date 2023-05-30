@@ -1,4 +1,3 @@
-@import url(.\variable.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
 *{
     margin:0px;
@@ -89,21 +88,21 @@
 .banner-2{
     display:flex;
     justify-content: center;
+}
+.banner-2-content{
+    display:flex;
+    justify-content: start;
     gap:20px; 
     overflow: auto scroll;
     width:1170px;
-    
 }
-.banner-2::-webkit-scrollbar{
+.banner-2-content::-webkit-scrollbar{
     display: none;
 }
 
 .banner-img-2 img{
     height: 195px;
     width: 335px;
-}
-.first-element-1{
-    margin-left: 920px;
 }
 
 .banner-3{
@@ -121,7 +120,7 @@
 .content{
     
     display:flex;
-    justify-content: center;
+    justify-content: start;
     overflow: auto scroll;
     gap:20px;
     height: 307px; 
@@ -175,22 +174,18 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.first-element-2{
-    margin-left: 400px;
-}
 
 /* footer-style */
 
 footer{
     display: flex;
     justify-content: center;
-    
-    margin-top:20px;
+    margin:20px;
 
 }
 .fa-heart{
     margin-top:100px;
-    padding:2px;
+    padding:3px;
     color:red;
 }
 
@@ -221,34 +216,27 @@ footer{
     .cart button{
         font-weight: 700;
         font-size: 14px;
-        padding: 15px;
+        padding: 12px;
+        margin-right: 20px;
     }
 
     /* main-style */
     .banner-1-img img{
-        width: 900px;
-        height: 185px;
-        margin-left:120px;
+        width: 768px;
+        height: 165px;
     }
 
-    .banner-2{
+    .banner-2-content{
         gap:15px; 
-        width:870px;
-        margin-left:120px;
-        padding:0px 350px;
+        width:740px;
     }
 
     .banner-img-2 img{
         height: 165px;
         width: 280px;
     }
-    .first-element-1{
-        margin-left: 890px;
-    }
-    
     .banner-3{
-        width:900px;
-        margin-left:120px;
+        width:768px;
     }
     .section-3-img img{
         width:90px;
@@ -256,13 +244,79 @@ footer{
     } 
     .category-name{
         font-size: 22px;
-        margin-left:120px;
     }
     .content{ 
-        width:870px;
-        margin-left:120px;
+        width:740px;
     }
-    .first-element-2{
-        margin-left: 720px;
+}
+@media only screen and (max-width:768px){
+    /* header-style */
+    .container{
+        height:65px;
+    }
+    .logo{
+        padding: 0px 10px;
+    }
+    .logo svg{
+        height:25px;
+        width: 80px;
+    }
+    .delivery-time{
+        font-weight: 700;
+        font-size: 14px;
+        width:120px;
+    }
+    .delivery-location{
+        margin-top: 5px;
+        font-size: 6px;
+    }
+    .search-bar{
+        width: 30%;
+        height: 35px;
+        gap: 6px;
+        padding: 9px;
+    }
+    .login{
+        font-weight: 200;
+        font-size: 14px;
+    }
+    .cart button{
+        font-weight: 700;
+        font-size: 10px;
+        padding:10px 3px;
+        margin-right:10px;
+        border-radius:5px;
+    }
+
+    /* main-style */
+    .wrapper{
+        top:80px;
+    }
+    .banner-1-img img{
+        width: 480px;
+        height: 135px;
+    }
+
+    .banner-2-content{
+        gap:15px; 
+        width:470px;
+    }
+
+    .banner-img-2 img{
+        height: 115px;
+        width: 200px;
+    }
+    .banner-3{
+        width:480px;
+    }
+    .section-3-img img{
+        width:45px;
+        height:75px;
+    } 
+    .category-name{
+        font-size: 16px;
+    }
+    .content{ 
+        width:480px;
     }
 }
